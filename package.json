@@ -1,12 +1,13 @@
 {
-  "dependencies": {
-    "elm-xref": "^0.3.2",
-    "elm": "0.19.0-no-deps",
-    "elm-format": "^0.8.2",
-    "elm-verify-examples": "^4.0.0",
-    "elm-test": "^0.19.0-rev6"
-  },
+  "dependencies": {},
+  "main": "./index.js",
   "scripts": {
-    "test": "elm make && elm-xref && elm-format --validate src && elm-verify-examples&& elm-test"
+    "watch": "npx spago build --watch",
+    "build": "npx spago build"
+  },
+  "devDependencies": {
+    "purescript": "^0.13.8",
+    "purty": "^6.2.0",
+    "spago": "^0.15.3"
   }
 }
